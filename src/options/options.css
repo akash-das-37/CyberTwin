@@ -1,0 +1,147 @@
+.options-root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.options-header {
+  position: relative;
+}
+
+.options-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(to right, #fff, #fca5a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.options-header p {
+  color: #71717a;
+  margin: 4px 0 0;
+}
+
+.saved-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.options-section {
+  padding: 20px;
+}
+
+.options-section h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #71717a;
+  margin: 0 0 16px;
+}
+
+.toggle-row,
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  font-size: 14px;
+  color: #d4d4d8;
+}
+
+.field-row {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.field-row span {
+  margin-bottom: 6px;
+}
+
+.toggle-row input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #dc2626;
+}
+
+.add-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.trust-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trust-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #d4d4d8;
+}
+
+.trust-list li.empty {
+  color: #52525b;
+  justify-content: center;
+}
+
+.trust-list button {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.trust-list button:hover {
+  text-decoration: underline;
+}
+
+.section-desc {
+  font-size: 13px;
+  color: #71717a;
+  margin: 0 0 12px;
+}
+
+.btn-secondary.danger {
+  border-color: rgba(220, 38, 38, 0.4);
+  color: #fca5a5;
+}
+
+.btn-secondary.danger:hover {
+  background: rgba(220, 38, 38, 0.15);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.ct-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(220, 38, 38, 0.2);
+  border-top-color: #dc2626;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

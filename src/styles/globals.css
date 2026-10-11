@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-cyber-black text-white font-cyber antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-cyber-card backdrop-blur-xl border border-cyber-border rounded-2xl shadow-glass;
+  }
+
+  .cyber-grid-bg {
+    @apply bg-cyber-black bg-cyber-grid bg-grid;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 rounded-xl bg-gradient-to-r from-cyber-blue-deep to-cyber-cyan
+      text-white font-semibold text-sm transition-all duration-300
+      hover:shadow-glow hover:scale-[1.02] active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 rounded-xl border border-cyber-border bg-cyber-dark/60
+      text-zinc-200 font-medium text-sm transition-all duration-300
+      hover:border-cyber-cyan/50 hover:bg-cyber-dark;
+  }
+
+  .input-cyber {
+    @apply w-full px-3 py-2 rounded-xl bg-cyber-darker border border-cyber-border
+      text-white text-sm focus:outline-none focus:border-cyber-cyan/60 focus:shadow-glow
+      transition-all duration-200;
+  }
+
+  .badge-safe {
+    @apply px-2 py-0.5 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30;
+  }
+
+  .badge-suspicious {
+    @apply px-2 py-0.5 rounded-full text-xs font-semibold bg-orange-500/20 text-orange-400 border border-orange-500/30;
+  }
+
+  .badge-dangerous {
+    @apply px-2 py-0.5 rounded-full text-xs font-semibold bg-red-500/20 text-red-400 border border-red-500/30;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 3px;
+}
